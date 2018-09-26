@@ -1,0 +1,22 @@
+- hosts: nxos
+  connection: local
+  gather_facts: no
+  vars:
+    nxapi:
+      host: "{{ inventory_hostname }}"
+      username: admin
+      password: admin
+      use_ssl: no
+
+  tasks:
+    - name: Run show version on remote devices
+      nxos_command:
+        commands:
+            - command: show version
+              output: json
+        provider: "{{ nxapi }}"
+      register: result
+
+    - name: Print result
+      debug:
+        msg: "{{ result }}"
