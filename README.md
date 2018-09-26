@@ -6,6 +6,7 @@ The purpose of project are...
 
 ## Ansible Playbook Features
 - [x] Test reachability
+- [x] Backup switch configuration
 - [x] Show version
 
 ## Ansible Tower Workflow Screenshot

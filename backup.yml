@@ -1,0 +1,12 @@
+- hosts: nxos
+  connection: local
+  gather_facts: no
+  tasks:
+    - name: Backup current switch config (nxos)
+      nxos_config:
+        backup: yes
+      register: result
+
+    - name: Print result
+      debug:
+        msg: "{{ result }}"
