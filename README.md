@@ -45,7 +45,7 @@ Print result -------------------------------------------------------------------
 ```
 
 ## Pre-requisites
-- Cisco NS-OSv 7.0 or 9.2.1
+- Cisco NS-OSv 7.0.3 or 9.2.11
 - Red Hat Ansible Tower
 - Git Server for version control (e.g GitHub)
 - Develop environment for write-up Ansible playbook. Please check the section `Installation` for more detais
