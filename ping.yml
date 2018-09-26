@@ -1,0 +1,24 @@
+- hosts: nxos
+  connection: local
+  gather_facts: no
+  vars:
+    nxapi:
+      host: "{{ inventory_hostname }}"
+      username: admin
+      password: admin
+      use_ssl: no
+
+  tasks:
+    - name: Test reachability to a few different public IPs using mgmt vrf
+      nxos_ping:
+        dest: "{{ item }}"
+        vrf: management
+        provider: "{{ nxapi }}"
+      with_items:
+        - 8.8.8.8
+        - 168.95.1.1
+      register: result
+
+    - name: Print result
+      debug:
+        msg: "{{ result }}"

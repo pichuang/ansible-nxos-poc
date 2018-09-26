@@ -5,6 +5,7 @@ The purpose of project are...
 2. Provide sample playbooks based on nxos ansible modules
 
 ## Ansible Playbook Features
+- [x] Test reachability
 - [x] Show version
 
 ## Ansible Tower Workflow Screenshot
