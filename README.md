@@ -58,4 +58,5 @@ Print result -------------------------------------------------------------------
 ## References
 - [GitHub - jedelman8/nxos-ansible](https://github.com/jedelman8/nxos-ansible)
 - [NETWORK DEVICE AUTHENTICATION WITH ANSIBLE 2.3](https://www.ansible.com/blog/network-device-authentication-with-ansible-2-3)
+- [NXOS Platform Options](https://docs.ansible.com/ansible/2.6/network/user_guide/platform_nxos.html#example-nx-api-group-vars-nxos-yml)
 - [Ansible Modules - NXOS](https://docs.ansible.com/ansible/devel/modules/list_of_network_modules.html#nxos)
